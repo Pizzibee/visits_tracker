@@ -1,8 +1,7 @@
 import React from 'react';
 import Navbar from './components/navbar';
-import { BrowserRouter, Route } from "react-router-dom";
-import Countries from './components/countries';
-import Visits from './components/visits';
+import { BrowserRouter } from "react-router-dom";
+import Router from './components/router'
 
 class App extends React.Component {
   render(){
@@ -10,8 +9,7 @@ class App extends React.Component {
       <BrowserRouter>
         <div className="App">
           <Navbar></Navbar>
-          <Route path="/" exact component={Countries} />
-          <Route path="/visits/" component={Visits} />
+          <Router></Router>
         </div>
       </BrowserRouter>
     );

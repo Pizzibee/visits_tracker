@@ -37,8 +37,9 @@ class Countries extends React.Component {
 }
 
 const mapStateToProps = (state) => {
+  const {countries} = state;
   return {
-    countries: state.countries
+    countries
   };
 };
 
